@@ -21,7 +21,9 @@ public class CILabTest {
     @Test
     public void detectCapitalUseTest1() {
         myString.setString("USA");
-        assertTrue(myString.detectCapitalUse());
+        CILab str = new CILab();
+        str.setString(myString.getString());
+        assertTrue(str.detectCapitalUse());
     }
     @Test
     public void detectCapitalUseTest2() {
